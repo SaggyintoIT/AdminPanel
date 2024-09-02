@@ -1,0 +1,1346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="csrf-token" content="ba6aPs6CLzh6boxT6a476WlISKqyXqquY5N5EhBq">
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<title>Businesso - Admin</title>
+	<link rel="icon" href="https://businesso.xyz/assets/front/img/650698c2ec1d6.png">
+	<!-- CSS Files -->
+<link href="https://businesso.xyz/assets/front/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/fontawesome-iconpicker.min.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/dropzone.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/front/css/jquery-ui.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/jquery.timepicker.min.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/summernote-bs4.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/select2.min.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/atlantis.css">
+<link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/custom.css">
+    <link rel="stylesheet" href="https://businesso.xyz/assets/admin/css/dark.css">
+
+        
+    
+</head>
+<body  data-background-color="dark" >
+	<div class="wrapper">
+
+    
+    <div class="main-header">
+    <!-- Logo Header -->
+    <div class="logo-header"  data-background-color="dark2" >
+
+        <a href="https://businesso.xyz" class="logo" target="_blank">
+            <img src="https://businesso.xyz/assets/front/img/6506953ba3468.png" alt="navbar brand" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="icon-menu"></i>
+            </span>
+        </button>
+        <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+        <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+    </div>
+    <!-- End Logo Header -->
+
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-header navbar-expand-lg"
+         data-background-color="dark" >
+
+        <div class="container-fluid">
+
+            <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                <form action="https://businesso.xyz/admin/change-theme" class="mr-4 form-inline" id="adminThemeForm">
+                    <div class="form-group">
+                        <div class="selectgroup selectgroup-secondary selectgroup-pills">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="theme" value="light" class="selectgroup-input"
+                                    
+                                    onchange="document.getElementById('adminThemeForm').submit();">
+                                <span class="selectgroup-button selectgroup-button-icon"><i
+                                        class="fa fa-sun"></i></span>
+                            </label>
+                            <label class="selectgroup-item">
+                                <input type="radio" name="theme" value="dark" class="selectgroup-input"
+                                    checked
+                                    onchange="document.getElementById('adminThemeForm').submit();">
+                                <span class="selectgroup-button selectgroup-button-icon"><i
+                                        class="fa fa-moon"></i></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <li class="nav-item dropdown hidden-caret">
+                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <div class="avatar-sm">
+                                                            <img src="https://businesso.xyz/assets/admin/img/propics/5f5797dbc520b.png"
+                                    alt="..." class="avatar-img rounded-circle">
+                                                    </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <div class="dropdown-user-scroll scrollbar-outer">
+                            <li>
+                                <div class="user-box">
+                                    <div class="avatar-lg">
+                                                                                    <img src="https://businesso.xyz/assets/admin/img/propics/5f5797dbc520b.png"
+                                                alt="..." class="avatar-img rounded">
+                                                                            </div>
+                                    <div class="u-text">
+                                        <h4>Justin</h4>
+                                        <p class="text-muted">admin@example.com</p><a
+                                            href="https://businesso.xyz/admin/profile/edit"
+                                            class="btn btn-xs btn-secondary btn-sm">Edit Profile</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="https://businesso.xyz/admin/profile/edit">Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="https://businesso.xyz/admin/changePassword">Change Password</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://businesso.xyz/admin/logout">Logout</a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</div>
+    
+
+
+    
+    <div class="sidebar sidebar-style-2"  data-background-color="dark2" >
+    <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+            <div class="user">
+                <div class="avatar-sm float-left mr-2">
+                                            <img src="https://businesso.xyz/assets/admin/img/propics/5f5797dbc520b.png"
+                            alt="..." class="avatar-img rounded">
+                                    </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                        <span>
+                            Justin
+                                                         <span class="user-level">
+
+                                                               Version -  3.4
+                                                           </span>
+                            <span class="caret"></span>
+                        </span>
+                    </a>
+                    <div class="clearfix"></div>
+
+                    <div class="collapse in" id="collapseExample">
+                        <ul class="nav">
+                            <li>
+                                <a href="https://businesso.xyz/admin/profile/edit">
+                                    <span class="link-collapse">Edit Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://businesso.xyz/admin/changePassword">
+                                    <span class="link-collapse">Change Password</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://businesso.xyz/admin/logout">
+                                    <span class="link-collapse">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-primary">
+
+                <div class="row mb-2">
+                    <div class="col-12">
+                        <form action="">
+                            <div class="form-group py-0">
+                                <input name="term" type="text" class="form-control sidebar-search ltr"
+                                    value="" placeholder="Search Menu Here...">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                
+                <li class="nav-item ">
+                    <a href="https://businesso.xyz/admin/dashboard">
+                        <i class="la flaticon-paint-palette"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+
+                
+                                    <li
+                        class="nav-item
+                    ">
+                        <a data-toggle="collapse" href="#packageManagement">
+                            <i class="fas fa-receipt"></i>
+                            <p>Package Management</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+                        "
+                            id="packageManagement">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/package/settings">
+                                        <span class="sub-item">Settings</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="">
+                                    <a href="https://businesso.xyz/admin/coupon">
+                                        <span class="sub-item">Coupons</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/package/features">
+                                        <span class="sub-item">Package Features</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="">
+                                    <a href="https://businesso.xyz/admin/packages?language=en">
+                                        <span class="sub-item">Packages</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    <li class="nav-item
+                    ">
+                        <a href="https://businesso.xyz/admin/payment-log">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <p>Payment Log</p>
+                        </a>
+                    </li>
+                
+                                    <li
+                        class="nav-item
+                        ">
+                        <a data-toggle="collapse" href="#customDomains">
+                            <i class="fas fa-link"></i>
+                            <p>Custom Domains</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+                            "
+                            id="customDomains">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/domain/texts">
+                                        <span class="sub-item">Request Page Texts</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/domains">
+                                        <span class="sub-item">All Requests</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/domains?type=pending">
+                                        <span class="sub-item">Pending Requests</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/domains?type=connected">
+                                        <span class="sub-item">Connected Requests</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/domains?type=rejected">
+                                        <span class="sub-item">Rejected Requests</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+                                    <li class="nav-item
+                        ">
+                        <a data-toggle="collapse" href="#subDomains">
+                            <i class="fas fa-link"></i>
+                            <p>Subdomains</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+                            "
+                            id="subDomains">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/subdomains">
+                                        <span class="sub-item">All Subdomains</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/subdomains?type=pending">
+                                        <span class="sub-item">Pending Subdomains</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/subdomains?type=connected">
+                                        <span class="sub-item">Connected Subdomains</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                
+                                    <li
+                        class="nav-item
+                    ">
+
+                        <a data-toggle="collapse" href="#users">
+                            <i class="la flaticon-users"></i>
+                            <p>User Management</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse "
+                            id="users">
+                            <ul class="nav nav-collapse">
+                                <li class=" ">
+                                    <a href="https://businesso.xyz/admin/register/users">
+                                        <span class="sub-item">Registered Users</span>
+                                    </a>
+                                </li>
+                                <li class=" ">
+                                    <a href="https://businesso.xyz/admin/register/user/vcard">
+                                        <span class="sub-item">Users vCards</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    
+                    <li class="nav-item
+            ">
+                        <a href="https://businesso.xyz/admin/menu-builder?language=en">
+                            <i class="fas fa-bars"></i>
+                            <p>Menu Builder</p>
+                        </a>
+                    </li>
+                
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#home">
+                            <i class="la flaticon-home"></i>
+                            <p>Home Page</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="home">
+                            <ul class="nav nav-collapse">
+
+                                <li class="">
+                                    <a
+                                        href="https://businesso.xyz/admin/herosection/imgtext?language=en">
+                                        <span class="sub-item">Hero Section</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/introsection?language=en">
+                                        <span class="sub-item">Intro Section</span>
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="  ">
+                                    <a href="https://businesso.xyz/admin/features?language=en">
+                                        <span class="sub-item">Features</span>
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="  ">
+                                    <a href="https://businesso.xyz/admin/process?language=en">
+                                        <span class="sub-item">Work Process</span>
+                                    </a>
+                                </li>
+
+                                <li
+                                    class=" ">
+                                    <a href="https://businesso.xyz/admin/testimonials?language=en">
+                                        <span class="sub-item">Testimonials</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="  ">
+                                    <a href="https://businesso.xyz/admin/partners?language=en">
+                                        <span class="sub-item">Partners</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="https://businesso.xyz/admin/home-page-text-section?language=en">
+                                        <span class="sub-item">Section Titles</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="
+                                ">
+                                    <a href="https://businesso.xyz/admin/sections">
+                                        <span class="sub-item">Section Hide / Show</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#footer">
+                            <i class="fas fa-shoe-prints"></i>
+                            <p>Footer</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="footer">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/footers?language=en">
+                                        <span class="sub-item">Image &amp; Text</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/ulinks?language=en">
+                                        <span class="sub-item">Useful Links</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#pages">
+                            <i class="la flaticon-file"></i>
+                            <p>Pages</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="pages">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/page/create">
+                                        <span class="sub-item">Create Page</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="
+                ">
+                                    <a href="https://businesso.xyz/admin/pages?language=en">
+                                        <span class="sub-item">Pages</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#blog">
+                            <i class="fas fa-blog"></i>
+                            <p>Blog</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="blog">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/bcategorys?language=en">
+                                        <span class="sub-item">Category</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="
+                ">
+                                    <a href="https://businesso.xyz/admin/blogs?language=en">
+                                        <span class="sub-item">Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    
+                    <li class="nav-item
+           ">
+                        <a href="https://businesso.xyz/admin/faqs?language=en">
+                            <i class="la flaticon-round"></i>
+                            <p>FAQ Management</p>
+                        </a>
+                    </li>
+                
+
+                                    
+                    <li class="nav-item
+          ">
+                        <a href="https://businesso.xyz/admin/contact?language=en">
+                            <i class="la flaticon-whatsapp"></i>
+                            <p>Contact Page</p>
+                        </a>
+                    </li>
+                
+
+                
+                                    <li
+                        class="nav-item
+                    ">
+                        <a data-toggle="collapse" href="#announcementPopup">
+                            <i class="fas fa-bullhorn"></i>
+                            <p>Announcement Popup</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+                        "
+                            id="announcementPopup">
+                            <ul class="nav nav-collapse">
+                                <li
+                                    class="">
+                                    <a href="https://businesso.xyz/admin/popup/types">
+                                        <span class="sub-item">Add Popup</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="">
+                                    <a href="https://businesso.xyz/admin/popups?language=en">
+                                        <span class="sub-item">Popups</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+                
+
+                <li class="nav-item
+                ">
+                    <a href="https://businesso.xyz/admin/advertisement/settings">
+                        <i class="fas fa-ad"></i>
+                        <p>Advertisement</p>
+                    </a>
+                </li>
+
+
+
+                
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#subscribers">
+                            <i class="la flaticon-envelope"></i>
+                            <p>Subscribers</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="subscribers">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/subscribers">
+                                        <span class="sub-item">Subscribers</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/mailsubscriber">
+                                        <span class="sub-item">Mail to Subscribers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a data-toggle="collapse" href="#gateways">
+                            <i class="la flaticon-paypal"></i>
+                            <p>Payment Gateways</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+            "
+                            id="gateways">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/gateways">
+                                        <span class="sub-item">Online Gateways</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/offline/gateways?language=en">
+                                        <span class="sub-item">Offline Gateways</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+
+                                    
+                    <li
+                        class="nav-item
+           show
+          ">
+                        <a data-toggle="collapse" href="#basic">
+                            <i class="la flaticon-settings"></i>
+                            <p>Settings</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+             show
+            "
+                            id="basic">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/favicon">
+                                        <span class="sub-item">Favicon</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/logo">
+                                        <span class="sub-item">Logo</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/basicinfo">
+                                        <span class="sub-item">General Settings</span>
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="submenu
+                                 selected
+                                ">
+                                    <a data-toggle="collapse" href="#emailset"
+                                        aria-expanded="true">
+                                        <span class="sub-item">Email Settings</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <div class="collapse show"
+                                        id="emailset">
+                                        <ul class="nav nav-collapse subnav">
+                                            <li class="">
+                                                <a href="https://businesso.xyz/admin/mail-from-admin">
+                                                    <span class="sub-item">Mail from Admin</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="https://businesso.xyz/admin/mail-to-admin">
+                                                    <span class="sub-item">Mail to Admin</span>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="
+                                             active
+                                            ">
+                                                <a href="https://businesso.xyz/admin/mail_templates">
+                                                    <span class="sub-item">Mail Templates</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/preloader">
+                                        <span class="sub-item">Preloader</span>
+                                    </a>
+                                </li>
+                                
+
+                                <li
+                                    class="">
+                                    <a href="https://businesso.xyz/admin/social">
+                                        <span class="sub-item">Social Links</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/script">
+                                        <span class="sub-item">Plugins</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/css">
+                                        <span class="sub-item">Custom CSS</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/js">
+                                        <span class="sub-item">Custom JS</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/maintainance">
+                                        <span class="sub-item">Maintainance Mode</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/cookie-alert?language=en">
+                                        <span class="sub-item">Cookie Alert</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/seo?language=en">
+                                        <span class="sub-item">SEO Information</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+
+                
+
+
+
+                
+                                    
+                    <li
+                        class="nav-item
+        ">
+                        <a data-toggle="collapse" href="#adminLanguageManagement">
+                            <i class="la flaticon-chat-8"></i>
+                            <p>Language Management</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse
+                        "
+                            id="adminLanguageManagement">
+                            <ul class="nav nav-collapse">
+                                <li class="">
+                                    <a href="https://businesso.xyz/admin/languages">
+                                        <span class="sub-item">Admin Language Management</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="
+                                                                                                ">
+                                    <a
+                                        href="https://businesso.xyz/admin/tenant/default/language?language=en">
+                                        <span class="sub-item">Tenant Language Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                
+                
+
+
+                                    
+                    <li
+                        class="nav-item
+          ">
+                        <a href="https://businesso.xyz/admin/roles">
+                            <i class="la flaticon-multimedia-2"></i>
+                            <p>Role Management</p>
+                        </a>
+                    </li>
+                
+
+
+                                    
+                    <li
+                        class="nav-item
+           ">
+                        <a href="https://businesso.xyz/admin/users">
+                            <i class="la flaticon-user-5"></i>
+                            <p>Admins Management</p>
+                        </a>
+                    </li>
+                
+                                    
+                    <li class="nav-item
+            ">
+                        <a href="https://businesso.xyz/admin/sitemap?language=en">
+                            <i class="fa fa-sitemap"></i>
+                            <p>Sitemap</p>
+                        </a>
+                    </li>
+                
+
+                
+                <li class="nav-item">
+                    <a href="https://businesso.xyz/admin/cache-clear">
+                        <i class="la flaticon-close"></i>
+                        <p>Clear Cache</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+
+		<div class="main-panel">
+        <div class="content">
+            <div class="page-inner">
+                <div class="page-header">
+        <h4 class="page-title">Email Settings</h4>
+        <ul class="breadcrumbs">
+            <li class="nav-home">
+                <a href="https://businesso.xyz/admin/dashboard">
+                    <i class="flaticon-home"></i>
+                </a>
+            </li>
+            <li class="separator">
+                <i class="flaticon-right-arrow"></i>
+            </li>
+            <li class="nav-item">
+                <a href="#">Settings</a>
+            </li>
+            <li class="separator">
+                <i class="flaticon-right-arrow"></i>
+            </li>
+            <li class="nav-item">
+                <a href="#">Email Settings</a>
+            </li>
+            <li class="separator">
+                <i class="flaticon-right-arrow"></i>
+            </li>
+            <li class="nav-item">
+                <a href="#">Mail Templates</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card-title">
+                                Mail Templates
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                                            <div class="table-responsive">
+                                    <table class="table table-striped mt-3">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Mail Type</th>
+                                            <th scope="col">Mail Subject</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                                                    <tr>
+                                                <td>1</td>
+                                                <td >
+                                                    email_verification
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Verify Your Email</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/2"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>2</td>
+                                                <td >
+                                                    custom_domain_connected
+                                                                                                            <p class="mb-0">
+                                                            <small class="text-secondary">(After Admin connects a custom domain with server & change the status to 'connected' for that domain request)</small>
+                                                        </p>
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Custom Domain is Connected with Our Server</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/12"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>3</td>
+                                                <td >
+                                                    custom_domain_rejected
+                                                                                                                                                                <p class="mb-0">
+                                                            <small class="text-secondary">(After Admin change the status to 'rejected' for a custom domain request)</small>
+                                                        </p>
+                                                                                                                                                                                                                                                                </td>
+                                                <td>Custom Domain Request is Rejected</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/13"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>4</td>
+                                                <td >
+                                                    registration_with_premium_package
+                                                                                                                                                                                                                    <p class="mb-0">
+                                                            <small class="text-secondary">(After user registers with a premium package using online payment gateway)</small>
+                                                        </p>
+                                                                                                                                                                                                            </td>
+                                                <td>You have registered successfully</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/16"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>5</td>
+                                                <td >
+                                                    registration_with_trial_package
+                                                                                                                                                                                                                                                                        <p class="mb-0">
+                                                            <small class="text-secondary">(After user registers with a trial package)</small>
+                                                        </p>
+                                                                                                                                                        </td>
+                                                <td>You have registered successfully</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/17"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>6</td>
+                                                <td >
+                                                    registration_with_free_package
+                                                                                                                                                                                                                                                                                                                            <p class="mb-0">
+                                                            <small class="text-secondary">(After user registers with a free package)</small>
+                                                        </p>
+                                                                                                    </td>
+                                                <td>You have registered successfully</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/18"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>7</td>
+                                                <td >
+                                                    membership_expiry_reminder
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your membership will be expired soon</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/19"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>8</td>
+                                                <td >
+                                                    membership_expired
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your membership is expired</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/20"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>9</td>
+                                                <td >
+                                                    membership_extend
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your membership is extended</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/21"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>10</td>
+                                                <td >
+                                                    payment_accepted_for_membership_extension_offline_gateway
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your payment for membership extension is accepted</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/22"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>11</td>
+                                                <td >
+                                                    payment_accepted_for_registration_offline_gateway
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your payment for registration is approved</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/23"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>12</td>
+                                                <td >
+                                                    payment_rejected_for_membership_extension_offline_gateway
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your payment for membership extension is rejected</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/24"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>13</td>
+                                                <td >
+                                                    payment_rejected_for_registration_offline_gateway
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Your payment for registration is rejected</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/25"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>14</td>
+                                                <td >
+                                                    admin_changed_current_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has changed your current package</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/26"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>15</td>
+                                                <td >
+                                                    admin_added_current_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has added current package for you</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/27"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>16</td>
+                                                <td >
+                                                    admin_changed_next_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has changed your next package</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/28"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>17</td>
+                                                <td >
+                                                    admin_added_next_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has added next package for you</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/29"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>18</td>
+                                                <td >
+                                                    admin_removed_current_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has removed current package for you</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/30"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>19</td>
+                                                <td >
+                                                    admin_removed_next_package
+                                                                                                                                                                                                                                                                                                                    </td>
+                                                <td>Admin has removed next package for you</td>
+                                                <td>
+                                                    <a
+                                                        class="btn btn-secondary btn-sm"
+                                                        href="https://businesso.xyz/admin/edit_mail_template/31"
+                                                    >
+                              <span class="btn-label">
+                                <i class="fas fa-edit"></i>
+                              </span>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                                                                </tbody>
+                                    </table>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+            <footer class="footer">
+  <div class="container-fluid">
+    <div class="d-block mx-auto">
+      Copyright © 2023. All rights reserved by Businesso.
+    </div>
+  </div>
+</footer>
+		</div>
+
+	</div>
+
+	<script>
+  "use strict";
+  var mainurl = "https://businesso.xyz";
+  var imgupload = "https://businesso.xyz/admin/summernote/upload";
+  var storeUrl = "";
+  var removeUrl = "";
+  var rmvdbUrl = "";
+  var audio = new Audio("https://businesso.xyz/assets/front/files/new-order-notification.mp3");
+  var demo_mode = "active";
+</script>
+<!--   Core JS Files   -->
+<script src="https://businesso.xyz/assets/admin/js/core/jquery-3.4.1.min.js"></script>
+<script src="https://businesso.xyz/assets/admin/js/plugin/vue/vue.js"></script>
+<script src="https://businesso.xyz/assets/admin/js/plugin/vue/axios.js"></script>
+<script src="https://businesso.xyz/assets/admin/js/core/popper.min.js"></script>
+<script src="https://businesso.xyz/assets/admin/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="https://businesso.xyz/assets/admin/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Timepicker -->
+<script src="https://businesso.xyz/assets/front/js/jquery.timepicker.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Bootstrap Tag Input -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstrap Datepicker -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+<!-- Datatable -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/datatables.min.js"></script>
+
+<!-- Dropzone JS -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/dropzone/jquery.dropzone.min.js"></script>
+
+<!-- Summernote JS -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/summernote/summernote-bs4.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+<!-- JS color JS -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/jscolor/jscolor.js"></script>
+
+<!-- Select2 JS -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/select2.min.js"></script>
+
+<!-- Atlantis JS -->
+<script src="https://businesso.xyz/assets/admin/js/atlantis.min.js"></script>
+
+<!-- Fontawesome Icon Picker JS -->
+<script src="https://businesso.xyz/assets/admin/js/plugin/fontawesome-iconpicker/fontawesome-iconpicker.min.js"></script>
+
+
+<script src="https://businesso.xyz/assets/admin/js/plugin/webfont/webfont.min.js"></script>
+
+<!-- Custom JS -->
+<script src="https://businesso.xyz/assets/admin/js/custom.js"></script>
+
+<!-- misc JS -->
+<script src="https://businesso.xyz/assets/admin/js/misc.js"></script>
+
+
+
+
+
+
+    
+    <div class="request-loader">
+        <img src="https://businesso.xyz/assets/admin/img/loader.gif" alt="">
+    </div>
+    
+</body>
+</html>
